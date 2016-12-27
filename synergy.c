@@ -26,13 +26,14 @@ int main(int argc, char *argv[]){
   char *goods = argv[2];
   size_t weight = strlen(goods);
   char *box[NUM_THREADS];
+
+  //considering edge cases
   if(NUM_THREADS>weight){
-    for(size_t i=0;i<weight;)
+    for(size_t i=0;i<weight;i++){
+
+    }
 
   }
-
-
-
 
   for(size_t i = 0;i<weight;i++){
     pthread_create(&solders[i],NULL,fighting, (void*)goods);
