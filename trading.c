@@ -15,7 +15,7 @@ void* fighting(void *ptr){
 int main(int argc, char *argv[]){
   if(argc!=3){
     perror("Incorrect number of arguments (3)");
-    puts("Remember to include flag -pthread during compilation");
+    puts("Remember to include -pthread flag during compilation");
     exit(1);
   }
   printf("Hi Nick! This is a multi-threaded program where users indicate their desired number of threads and a message. The message length is then divided equally among the threads to increase every character by 1\n");
